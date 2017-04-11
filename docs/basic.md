@@ -27,6 +27,10 @@ class Shop extends Model
 The only required property to define in the model is `$baseUri`. This is the DNS name of the microservice that powers
 this model. The other properties that can be defined are:
 
-|     Property     |                                              Description                                             |
-|:----------------:|:----------------------------------------------------------------------------------------------------:|
-| `$restEndpoints` | List of endpoints. One for each HTTP method. If not defined then the plural model name will be used. |
+| Property               | Description                                                                                          |
+|------------------------|------------------------------------------------------------------------------------------------------|
+| `$restEndpoints`       | List of endpoints. One for each HTTP method. If not defined then the plural model name will be used. |
+| `$https`               | Should requests for this model be made using https.                                                  |
+| `$primaryKeyAttribute` | The name of the attribute to use as the primary key. Defaults to 'id'.                               |
+| `$pluralName`          | The plural model name.                                                                               |
+| `$attributeCacheKeys`  | A list of the model attributes that can be used as cache keys.                                       |
