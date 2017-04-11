@@ -201,6 +201,8 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
     }
 
     /**
+     * Get the base URI used for this models REST communication.
+     *
      * @return string
      */
     public function getBaseUri()
@@ -209,6 +211,8 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
     }
 
     /**
+     * Set the base URI used for this models REST communication.
+     *
      * @param string $baseUri
      */
     public function setBaseUri($baseUri)
@@ -217,6 +221,8 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
     }
 
     /**
+     * Get the list of REST endpoints for this model.
+     *
      * @return array
      */
     public function getRestEndpoints()
@@ -225,6 +231,8 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
     }
 
     /**
+     * Should communication for this model be done over https?
+     *
      * @return bool
      */
     public function isHttps()
@@ -233,6 +241,8 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
     }
 
     /**
+     * Get the attribute used for this models primary key.
+     *
      * @return string
      */
     public function getPrimaryKeyAttribute()
@@ -241,6 +251,8 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
     }
 
     /**
+     * Set the value of this models primary key.
+     *
      * @param $primaryKeyValue
      * @return string
      */
@@ -250,6 +262,8 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
     }
 
     /**
+     * Get the value of this models primary key.
+     *
      * @return string
      */
     public function getPrimaryKeyValue()
@@ -278,6 +292,8 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
     }
 
     /**
+     * Get the list of related models.
+     *
      * @return Model[]
      */
     public function getRelations()
@@ -286,6 +302,8 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
     }
 
     /**
+     * Set the list of related models.
+     *
      * @param Model[] $relations
      */
     public function setRelations($relations)
@@ -294,6 +312,8 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
     }
 
     /**
+     * Add a single related model.
+     *
      * @param Model $relation
      */
     public function addRelation(Model $relation)

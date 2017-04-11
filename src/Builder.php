@@ -38,6 +38,8 @@ class Builder
     protected $relations = [];
 
     /**
+     * Get the associated remote model.
+     *
      * @return Model
      */
     public function getModel()
@@ -46,6 +48,8 @@ class Builder
     }
 
     /**
+     * Set the associated remote model.
+     *
      * @param Model $model
      */
     public function setModel($model)
@@ -54,6 +58,8 @@ class Builder
     }
 
     /**
+     * Get a list of all specified remote model relations.
+     *
      * @return \string[]
      */
     public function getRelations()
@@ -62,6 +68,8 @@ class Builder
     }
 
     /**
+     * Set the list of all specified remote model relations.
+     *
      * @param \string[] $relations
      */
     public function setRelations($relations)
