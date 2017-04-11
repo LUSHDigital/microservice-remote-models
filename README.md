@@ -6,9 +6,19 @@ This package provides a model system, similar to Eloquent, but with the key focu
 is bound to a remote microservice with an expected RESTful API. This allows developers to create service aggregators which
 can manipulate data, via models, just as easily as if the data was in a local database.
 
+To allow this to work the package is quite opinionated on the request/response data in the remote services. This data
+should always conform to the following standard:
+
 TODO: Add API contract for RESTful service.
 
-## Package Contents
+> This package is intended to operate within a Kubernetes cluster whereby service discovery is handled by DNS names.
+
+### Relationships
+The package also handles relationships between remote models via the use of gRPC. As well as the microservices existing
+to power the remote models, it is also expected that a gRPC application will be available to manage the relationships.
+This gRPC application is based upon this [protocol buffer](https://github.com/LUSHDigital/lush-global-soa-architecture/blob/feature/SOA-66/protos/relationship/v1/relationship.proto).
+The gRPC is expected to be available at a DNS name in the following pattern `model_one_plural-model_two_plural:port`.
+An example would be https://shops-addresses:5001.
 
 ## Installation
 Install the package as normal:
@@ -23,7 +33,7 @@ Register the service provider with Lumen in the bootstrap/app.php file:
 $app->register(LushDigital\MicroServiceRemoteModels\RemoteModelServiceProvider::class);
 ```
 
-The package requires that the following changes are made to the Lumen config in bootstrap/app.php
+The package requires that the following changes are made to the Lumen config in `bootstrap/app.php`
 ```php
 <?php
 
@@ -37,5 +47,8 @@ $app->withEloquent();
 $app->configure('database');
 ```
 
-## Usage
-TODO: Documentation.
+## Documentation
+* [Basic usage](https://github.com/LUSHDigital/microservice-remote-models/tree/master/docs/basic.md)
+* [CRUD](https://github.com/LUSHDigital/microservice-remote-models/tree/master/docs/crud.md)
+* [Relations](https://github.com/LUSHDigital/microservice-remote-models/tree/master/docs/relations.md)
+* [Conditions](https://github.com/LUSHDigital/microservice-remote-models/tree/master/docs/conditions.md)
