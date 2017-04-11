@@ -34,3 +34,38 @@ this model. The other properties that can be defined are:
 | `$primaryKeyAttribute` | The name of the attribute to use as the primary key. Defaults to 'id'.                               |
 | `$pluralName`          | The plural model name.                                                                               |
 | `$attributeCacheKeys`  | A list of the model attributes that can be used as cache keys.                                       |
+
+## Using a Model
+Once you have created your model it can then be used in a very similar way to a standard [Eloquent](https://laravel.com/docs/5.4/eloquent)
+model. Some brief examples:
+
+### Create a new model
+```php
+$data = [
+    'name' => 'My Awesome Shop',
+    'country_code' => 'GB',
+];
+
+$shop = new Shop;
+$shop->fill($data);
+$shop->save();
+```
+
+### Setting an attribute
+Via magic setter:
+```php
+$shop = new Shop;
+$shop->name = 'My Awesome Shop';
+```
+
+Or explicitly:
+```php
+$shop = new Shop;
+$shop->setAttribute('name', 'My Awesome Shop');
+```
+
+For more detailed documentation on manipulating models see the other docs:
+
+* [CRUD](https://github.com/LUSHDigital/microservice-remote-models/tree/master/docs/crud.md)
+* [Relations](https://github.com/LUSHDigital/microservice-remote-models/tree/master/docs/relations.md)
+* [Conditions](https://github.com/LUSHDigital/microservice-remote-models/tree/master/docs/conditions.md)
