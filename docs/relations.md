@@ -139,7 +139,7 @@ class ShopController extends Controller
 }
 ```
 
-## Update
+### Update
 To update an existing record (and it's relations) in the remote service, create a new model instance, set the primary
 key, amend any data you want, add the relations, and then call the `save` method.
 ```php
@@ -182,7 +182,7 @@ class ShopController extends Controller
 }
 ```
 
-## Delete
+### Delete
 To delete an existing record (and it's relations) from a remote service just call the static `with` method to define the
 relations and then the `delete` method, with the primary key value as a parameter.
 
