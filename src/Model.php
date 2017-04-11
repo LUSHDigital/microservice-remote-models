@@ -167,7 +167,7 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
      *
      * @return Collection
      */
-    public function where($key, $value)
+    public static function where($key, $value)
     {
         $instance = new static;
         return $instance->newQueryBuilder()->where($key, $value);
