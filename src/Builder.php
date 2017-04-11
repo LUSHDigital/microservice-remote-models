@@ -54,6 +54,14 @@ class Builder
     }
 
     /**
+     * @return \string[]
+     */
+    public function getRelations()
+    {
+        return $this->relations;
+    }
+
+    /**
      * @param \string[] $relations
      */
     public function setRelations($relations)

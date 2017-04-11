@@ -83,7 +83,7 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
     /**
      * The model's relations.
      *
-     * @var ServiceModel[]
+     * @var Model[]
      */
     protected $relations = [];
 
@@ -95,7 +95,7 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
     protected $attributeCacheKeys = [];
 
     /**
-     * ServiceModel constructor.
+     * Model constructor.
      *
      * @param array $attributes
      */
@@ -148,8 +148,8 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
     /**
      * Get a single model instance by it's primary key.
      *
-     * @param $primaryKey
-     * @return ServiceModel
+     * @param mixed $primaryKey
+     * @return Model
      *
      * @throws RequestException
      */
@@ -162,8 +162,8 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
     /**
      * Get a single model instance by a given key/value condition
      *
-     * @param $key
-     * @param $value
+     * @param string $key
+     * @param mixed $value
      *
      * @return Collection
      */
@@ -192,7 +192,7 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
      * Delete a single model instance by it's primary key.
      *
      * @param $primaryKey
-     * @return ServiceModel
+     * @return Model
      */
     public static function delete($primaryKey)
     {
@@ -278,7 +278,7 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
     }
 
     /**
-     * @return ServiceModel[]
+     * @return Model[]
      */
     public function getRelations()
     {
@@ -286,7 +286,7 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
     }
 
     /**
-     * @param ServiceModel[] $relations
+     * @param Model[] $relations
      */
     public function setRelations($relations)
     {
@@ -294,9 +294,9 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
     }
 
     /**
-     * @param ServiceModel $relation
+     * @param Model $relation
      */
-    public function addRelation(ServiceModel $relation)
+    public function addRelation(Model $relation)
     {
         $this->relations[] = $relation;
     }
@@ -469,7 +469,7 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
     {
         // Use the string library to get a plural name if one is not specified.
         if (empty($this->pluralName)) {
-            return Str::lower(Str::plural(class_basename($this)));
+            return str_replace('\\', '', Str::snake(Str::plural(class_basename($this)), '-'));
         }
 
         return $this->pluralName;
@@ -493,7 +493,7 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
     /**
      * Dynamically retrieve attributes on the model.
      *
-     * @param  string  $key
+     * @param string $key
      * @return mixed
      */
     public function __get($key)
@@ -504,9 +504,8 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
     /**
      * Dynamically set attributes on the model.
      *
-     * @param  string  $key
-     * @param  mixed  $value
-     * @return void
+     * @param string $key
+     * @param mixed $value
      */
     public function __set($key, $value)
     {
@@ -516,12 +515,22 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
     /**
      * Determine if an attribute or relation exists on the model.
      *
-     * @param  string  $key
+     * @param string $key
      * @return bool
      */
     public function __isset($key)
     {
         return !is_null($this->getAttribute($key));
+    }
+
+    /**
+     * Unset an attribute on the model.
+     *
+     * @param $key
+     */
+    public function __unset($key)
+    {
+        unset($this->attributes[$key], $this->relations[$key]);
     }
 
     /**

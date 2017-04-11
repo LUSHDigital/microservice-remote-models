@@ -1,5 +1,5 @@
 # Lush Digital - Microservice Remote Models
-A Lumen package to provide a familiar model paradigm but for distributed data.
+A Lumen package to provide a familiar model paradigm for distributed data.
 
 ## Description
 This package provides a model system, similar to Eloquent, but with the key focus on distributed data. Each model class
