@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class LushDigital\MicroServiceRemoteModels\Model</title>
+
+	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-LushDigital.html">
+						LushDigital<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-LushDigital.MicroServiceRemoteModels.html">
+						MicroServiceRemoteModels<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-LushDigital.MicroServiceRemoteModels.Events.html">
+						Events					</a>
+
+						</li>
+				<li>
+					<a href="namespace-LushDigital.MicroServiceRemoteModels.Listeners.html">
+						Listeners					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-LushDigital.MicroServiceRemoteModels.Builder.html">Builder</a></li>
+				<li><a href="class-LushDigital.MicroServiceRemoteModels.Collection.html">Collection</a></li>
+				<li class="active"><a href="class-LushDigital.MicroServiceRemoteModels.Model.html">Model</a></li>
+				<li><a href="class-LushDigital.MicroServiceRemoteModels.RemoteModelServiceProvider.html">RemoteModelServiceProvider</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-LushDigital.MicroServiceRemoteModels.html" title="Summary of LushDigital\MicroServiceRemoteModels"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Model</h1>
+
+
+	<div class="description">
+	<p>An abstract class that all service models need to implement.</p>
+
+<p>A 'service model' works like a normal data model but operates over web
+services.</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>LushDigital\MicroServiceRemoteModels\Model</span></b>			
+			 implements 
+<span>ArrayAccess</span>, 
+			
+<span>Illuminate\Contracts\Support\Arrayable</span>, 
+			
+<span>LushDigital\MicroServiceModelUtils\Contracts\Cacheable</span>, 
+			
+<span>Illuminate\Contracts\Support\Jsonable</span>, 
+			
+<span>JsonSerializable</span>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		<b>Abstract</b><br>
+		
+		<b>Namespace:</b> <a href="namespace-LushDigital.html">LushDigital</a>\<a href="namespace-LushDigital.MicroServiceRemoteModels.html">MicroServiceRemoteModels</a><br>
+		<b>Package:</b> LushDigital\MicroServiceRemoteModels<br>
+
+			<b>Located at</b> <a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#20-578" title="Go to source code">Model.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#97-105" title="Go to source code">__construct</a>( <span>array <var>$attributes</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Model constructor.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Model constructor.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attributes</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fill" id="_fill">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fill">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#107-117" title="Go to source code">fill</a>( <span>array <var>$attributes</var></span> )</code>
+
+		<div class="description short">
+			<p>Fill the model with an array of attributes.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Fill the model with an array of attributes.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attributes</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="with" id="_with">
+
+		<td class="attributes"><code>
+			 public static
+
+			<code><a href="class-LushDigital.MicroServiceRemoteModels.Builder.html">LushDigital\MicroServiceRemoteModels\Builder</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_with">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#119-133" title="Go to source code">with</a>( <span>mixed <var>$relations</var></span> )</code>
+
+		<div class="description short">
+			<p>Specify the relations to get with this model.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Specify the relations to get with this model.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$relations</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-LushDigital.MicroServiceRemoteModels.Builder.html">LushDigital\MicroServiceRemoteModels\Builder</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="all" id="_all">
+
+		<td class="attributes"><code>
+			 public static
+
+			<code><a href="class-LushDigital.MicroServiceRemoteModels.Collection.html">LushDigital\MicroServiceRemoteModels\Collection</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_all">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#135-146" title="Go to source code">all</a>( )</code>
+
+		<div class="description short">
+			<p>Get all of the models from the remote service.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get all of the models from the remote service.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-LushDigital.MicroServiceRemoteModels.Collection.html">LushDigital\MicroServiceRemoteModels\Collection</a></code>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					GuzzleHttp\Exception\RequestException
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="find" id="_find">
+
+		<td class="attributes"><code>
+			 public static
+
+			<code><a href="class-LushDigital.MicroServiceRemoteModels.Model.html">LushDigital\MicroServiceRemoteModels\Model</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_find">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#148-160" title="Go to source code">find</a>( <span>mixed <var>$primaryKey</var></span> )</code>
+
+		<div class="description short">
+			<p>Get a single model instance by it's primary key.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get a single model instance by it's primary key.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$primaryKey</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-LushDigital.MicroServiceRemoteModels.Model.html">LushDigital\MicroServiceRemoteModels\Model</a></code>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					GuzzleHttp\Exception\RequestException
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="where" id="_where">
+
+		<td class="attributes"><code>
+			 public static
+
+			<code><a href="class-LushDigital.MicroServiceRemoteModels.Collection.html">LushDigital\MicroServiceRemoteModels\Collection</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_where">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#162-174" title="Go to source code">where</a>( <span>string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			<p>Get a single model instance by a given key/value condition</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get a single model instance by a given key/value condition</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd></dd>
+					<dt><var>$value</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-LushDigital.MicroServiceRemoteModels.Collection.html">LushDigital\MicroServiceRemoteModels\Collection</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="save" id="_save">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_save">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#176-189" title="Go to source code">save</a>( )</code>
+
+		<div class="description short">
+			<p>Save the model.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Save the model.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			 public static
+
+			<code><a href="class-LushDigital.MicroServiceRemoteModels.Model.html">LushDigital\MicroServiceRemoteModels\Model</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#191-201" title="Go to source code">delete</a>( <span> <var>$primaryKey</var></span> )</code>
+
+		<div class="description short">
+			<p>Delete a single model instance by it's primary key.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Delete a single model instance by it's primary key.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$primaryKey</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-LushDigital.MicroServiceRemoteModels.Model.html">LushDigital\MicroServiceRemoteModels\Model</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBaseUri" id="_getBaseUri">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBaseUri">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#203-211" title="Go to source code">getBaseUri</a>( )</code>
+
+		<div class="description short">
+			<p>Get the base URI used for this models REST communication.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the base URI used for this models REST communication.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setBaseUri" id="_setBaseUri">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setBaseUri">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#213-221" title="Go to source code">setBaseUri</a>( <span>string <var>$baseUri</var></span> )</code>
+
+		<div class="description short">
+			<p>Set the base URI used for this models REST communication.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set the base URI used for this models REST communication.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$baseUri</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRestEndpoints" id="_getRestEndpoints">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRestEndpoints">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#223-231" title="Go to source code">getRestEndpoints</a>( )</code>
+
+		<div class="description short">
+			<p>Get the list of REST endpoints for this model.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the list of REST endpoints for this model.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isHttps" id="_isHttps">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isHttps">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#233-241" title="Go to source code">isHttps</a>( )</code>
+
+		<div class="description short">
+			<p>Should communication for this model be done over https?</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Should communication for this model be done over https?</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPrimaryKeyAttribute" id="_getPrimaryKeyAttribute">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPrimaryKeyAttribute">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#243-251" title="Go to source code">getPrimaryKeyAttribute</a>( )</code>
+
+		<div class="description short">
+			<p>Get the attribute used for this models primary key.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the attribute used for this models primary key.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setPrimaryKeyValue" id="_setPrimaryKeyValue">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setPrimaryKeyValue">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#253-262" title="Go to source code">setPrimaryKeyValue</a>( <span> <var>$primaryKeyValue</var></span> )</code>
+
+		<div class="description short">
+			<p>Set the value of this models primary key.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set the value of this models primary key.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$primaryKeyValue</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPrimaryKeyValue" id="_getPrimaryKeyValue">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPrimaryKeyValue">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#264-276" title="Go to source code">getPrimaryKeyValue</a>( )</code>
+
+		<div class="description short">
+			<p>Get the value of this models primary key.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the value of this models primary key.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMethodEndpoint" id="_getMethodEndpoint">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMethodEndpoint">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#278-292" title="Go to source code">getMethodEndpoint</a>( <span>string <var>$method</var></span> )</code>
+
+		<div class="description short">
+			<p>Get the endpoint for a given HTTP method.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the endpoint for a given HTTP method.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$method</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRelations" id="_getRelations">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-LushDigital.MicroServiceRemoteModels.Model.html">LushDigital\MicroServiceRemoteModels\Model</a>[]</code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRelations">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#294-302" title="Go to source code">getRelations</a>( )</code>
+
+		<div class="description short">
+			<p>Get the list of related models.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the list of related models.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-LushDigital.MicroServiceRemoteModels.Model.html">LushDigital\MicroServiceRemoteModels\Model</a>[]</code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setRelations" id="_setRelations">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setRelations">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#304-312" title="Go to source code">setRelations</a>( <span><code><a href="class-LushDigital.MicroServiceRemoteModels.Model.html">LushDigital\MicroServiceRemoteModels\Model</a>[]</code> <var>$relations</var></span> )</code>
+
+		<div class="description short">
+			<p>Set the list of related models.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set the list of related models.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$relations</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addRelation" id="_addRelation">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addRelation">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#314-322" title="Go to source code">addRelation</a>( <span><code><a href="class-LushDigital.MicroServiceRemoteModels.Model.html">LushDigital\MicroServiceRemoteModels\Model</a></code> <var>$relation</var></span> )</code>
+
+		<div class="description short">
+			<p>Add a single related model.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Add a single related model.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$relation</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAttributeCacheKeys" id="_getAttributeCacheKeys">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAttributeCacheKeys">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#324-332" title="Go to source code">getAttributeCacheKeys</a>( )</code>
+
+		<div class="description short">
+			<p>Get the attributes of this model that can be used as cache keys.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the attributes of this model that can be used as cache keys.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setAttributeCacheKeys" id="_setAttributeCacheKeys">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-LushDigital.MicroServiceRemoteModels.Model.html">LushDigital\MicroServiceRemoteModels\Model</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAttributeCacheKeys">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#334-345" title="Go to source code">setAttributeCacheKeys</a>( <span>array <var>$attributeCacheKeys</var></span> )</code>
+
+		<div class="description short">
+			<p>Set the attributes of this model that can be used as cache keys.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set the attributes of this model that can be used as cache keys.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attributeCacheKeys</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-LushDigital.MicroServiceRemoteModels.Model.html">LushDigital\MicroServiceRemoteModels\Model</a></code><br>$this
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTable" id="_getTable">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTable">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#347-358" title="Go to source code">getTable</a>( )</code>
+
+		<div class="description short">
+			<p>Get The 'table' name associated with the model.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get The 'table' name associated with the model.</p>
+
+<p>In reality this is the DNS name of the remote service, but we use the
+'table' nomenclature for consistency with Lumen.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetExists" id="_offsetExists">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offsetExists">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#360-369" title="Go to source code">offsetExists</a>( <span>mixed <var>$offset</var></span> )</code>
+
+		<div class="description short">
+			<p>Determine if the given attribute exists.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Determine if the given attribute exists.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$offset</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code>ArrayAccess::offsetExists()</code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetGet" id="_offsetGet">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offsetGet">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#371-380" title="Go to source code">offsetGet</a>( <span>mixed <var>$offset</var></span> )</code>
+
+		<div class="description short">
+			<p>Get the value for a given offset.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the value for a given offset.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$offset</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code>ArrayAccess::offsetGet()</code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetSet" id="_offsetSet">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offsetSet">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#382-392" title="Go to source code">offsetSet</a>( <span>mixed <var>$offset</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			<p>Set the value for a given offset.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set the value for a given offset.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$offset</var></dt>
+					<dd></dd>
+					<dt><var>$value</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code>ArrayAccess::offsetSet()</code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetUnset" id="_offsetUnset">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offsetUnset">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#394-403" title="Go to source code">offsetUnset</a>( <span>mixed <var>$offset</var></span> )</code>
+
+		<div class="description short">
+			<p>Unset the value for a given offset.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Unset the value for a given offset.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$offset</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code>ArrayAccess::offsetUnset()</code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="toArray" id="_toArray">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_toArray">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#405-413" title="Go to source code">toArray</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the formatted object as an array.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the formatted object as an array.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="jsonSerialize" id="_jsonSerialize">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_jsonSerialize">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#415-423" title="Go to source code">jsonSerialize</a>( )</code>
+
+		<div class="description short">
+			<p>Convert the object into something JSON serializable.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Convert the object into something JSON serializable.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code>JsonSerializable::jsonSerialize()</code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="toJson" id="_toJson">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_toJson">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#425-434" title="Go to source code">toJson</a>( <span>integer <var>$options</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			<p>Convert the model instance to JSON.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Convert the model instance to JSON.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$options</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAttribute" id="_getAttribute">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAttribute">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#436-449" title="Go to source code">getAttribute</a>( <span>string <var>$key</var></span> )</code>
+
+		<div class="description short">
+			<p>Get an attribute from the model.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get an attribute from the model.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setAttribute" id="_setAttribute">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAttribute">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#451-460" title="Go to source code">setAttribute</a>( <span>string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			<p>Set a given attribute on the model.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set a given attribute on the model.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd></dd>
+					<dt><var>$value</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getClient" id="_getClient">
+
+		<td class="attributes"><code>
+			 public 
+
+			GuzzleHttp\Client|GuzzleHttp\ClientInterface
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getClient">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#462-481" title="Go to source code">getClient</a>( )</code>
+
+		<div class="description short">
+			<p>Get a HTTP client.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get a HTTP client.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					GuzzleHttp\Client|GuzzleHttp\ClientInterface
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPluralName" id="_getPluralName">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPluralName">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#483-496" title="Go to source code">getPluralName</a>( )</code>
+
+		<div class="description short">
+			<p>Get the plural version of the model name.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the plural version of the model name.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="newQueryBuilder" id="_newQueryBuilder">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-LushDigital.MicroServiceRemoteModels.Builder.html">LushDigital\MicroServiceRemoteModels\Builder</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_newQueryBuilder">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#498-511" title="Go to source code">newQueryBuilder</a>( <span>array <var>$relations</var> = []</span> )</code>
+
+		<div class="description short">
+			<p>Generate a new query builder for this model.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Generate a new query builder for this model.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$relations</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-LushDigital.MicroServiceRemoteModels.Builder.html">LushDigital\MicroServiceRemoteModels\Builder</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__get" id="___get">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___get">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#513-522" title="Go to source code">__get</a>( <span>string <var>$key</var></span> )</code>
+
+		<div class="description short">
+			<p>Dynamically retrieve attributes on the model.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Dynamically retrieve attributes on the model.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__set" id="___set">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___set">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#524-533" title="Go to source code">__set</a>( <span>string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			<p>Dynamically set attributes on the model.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Dynamically set attributes on the model.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd></dd>
+					<dt><var>$value</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__isset" id="___isset">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___isset">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#535-544" title="Go to source code">__isset</a>( <span>string <var>$key</var></span> )</code>
+
+		<div class="description short">
+			<p>Determine if an attribute or relation exists on the model.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Determine if an attribute or relation exists on the model.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__unset" id="___unset">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___unset">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#546-554" title="Go to source code">__unset</a>( <span> <var>$key</var></span> )</code>
+
+		<div class="description short">
+			<p>Unset an attribute on the model.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Unset an attribute on the model.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSavePromise" id="_getSavePromise">
+
+		<td class="attributes"><code>
+			 public 
+
+			GuzzleHttp\Promise\PromiseInterface
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSavePromise">#</a>
+		<code><a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#556-577" title="Go to source code">getSavePromise</a>( )</code>
+
+		<div class="description short">
+			<p>Get a HTTP promise for saving this model.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get a HTTP promise for saving this model.</p>
+
+<p>Can either be a POST or PUT depending on if the model exists or not.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					GuzzleHttp\Promise\PromiseInterface
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="baseUri" id="$baseUri">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#30-35" title="Go to source code"><var>$baseUri</var></a>
+
+			<div class="description short">
+				<p>The base URI for this model to make requests against.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The base URI for this model to make requests against.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$baseUri" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="restEndpoints" id="$restEndpoints">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#37-44" title="Go to source code"><var>$restEndpoints</var></a>
+
+			<div class="description short">
+				<p>List of endpoints. One for each HTTP method.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>List of endpoints. One for each HTTP method.</p>
+
+<p>If not defined then the plural model name will be used.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$restEndpoints" class="anchor">#</a>
+				<code>[]</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="https" id="$https">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#46-51" title="Go to source code"><var>$https</var></a>
+
+			<div class="description short">
+				<p>Should requests for this model be made using https.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Should requests for this model be made using https.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$https" class="anchor">#</a>
+				<code><span class="php-keyword1">true</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="primaryKeyAttribute" id="$primaryKeyAttribute">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#53-60" title="Go to source code"><var>$primaryKeyAttribute</var></a>
+
+			<div class="description short">
+				<p>The name of the attribute to use as the primary key.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The name of the attribute to use as the primary key.</p>
+
+<p>Defaults to 'id'.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$primaryKeyAttribute" class="anchor">#</a>
+				<code><span class="php-quote">'id'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="attributes" id="$attributes">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#69-74" title="Go to source code"><var>$attributes</var></a>
+
+			<div class="description short">
+				<p>The model's attributes.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The model's attributes.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$attributes" class="anchor">#</a>
+				<code>[]</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="pluralName" id="$pluralName">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#76-81" title="Go to source code"><var>$pluralName</var></a>
+
+			<div class="description short">
+				<p>The plural model name.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The plural model name.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$pluralName" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="relations" id="$relations">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-LushDigital.MicroServiceRemoteModels.Model.html">LushDigital\MicroServiceRemoteModels\Model</a>[]</code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#83-88" title="Go to source code"><var>$relations</var></a>
+
+			<div class="description short">
+				<p>The model's relations.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The model's relations.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$relations" class="anchor">#</a>
+				<code>[]</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="attributeCacheKeys" id="$attributeCacheKeys">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-LushDigital.MicroServiceRemoteModels.Model.html#90-95" title="Go to source code"><var>$attributeCacheKeys</var></a>
+
+			<div class="description short">
+				<p>A list of the model attributes that can be used as cache keys.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>A list of the model attributes that can be used as cache keys.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$attributeCacheKeys" class="anchor">#</a>
+				<code>[]</code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js?98e5a4296c7a267cfc81b7656a9e6a0162f76ba0"></script>
+<script src="elementlist.js?ee2c3fe69a377ec9fcc5b2eda84dca5a3518bdb1"></script>
+</body>
+</html>
