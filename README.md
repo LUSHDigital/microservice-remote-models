@@ -9,7 +9,7 @@ can manipulate data, via models, just as easily as if the data was in a local da
 To allow this to work the package is quite opinionated on the request/response data in the remote services. This data
 should always conform to the following standard:
 
-TODO: Add API contract for RESTful service.
+https://github.com/LUSHDigital/microservice-core/blob/master/spec/swagger.yaml
 
 > This package is intended to operate within a Kubernetes cluster whereby service discovery is handled by DNS names.
 
