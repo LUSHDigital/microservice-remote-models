@@ -283,14 +283,14 @@ class Builder
         $envVar = strtoupper(sprintf('REMOTE_MODEL_%s_%s_DNS', $leftEntity->getPluralName(), $rightEntity->getPluralName()));
 
         // Build the URL.
-        $url = sprintf('%s-%s:%d', $leftEntity->getPluralName(), $rightEntity->getPluralName(), $this->getGrpcPort());
+        $url = sprintf('%s-%s', $leftEntity->getPluralName(), $rightEntity->getPluralName());
 
         // Override the URL if we have an environment variable available.
         if (!empty(getenv($envVar))) {
             $url = getenv($envVar);
         }
 
-        return new RelationshipServiceClient($url, [
+        return new RelationshipServiceClient(sprintf('%s:%d', $url, $this->getGrpcPort()), [
             // TODO: TLS.
             'credentials' => \Grpc\ChannelCredentials::createInsecure(),
         ]);
