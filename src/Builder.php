@@ -280,7 +280,7 @@ class Builder
     public function getRelationshipClient(Model $leftEntity, Model $rightEntity)
     {
         // Build the name of the environment variable to check.
-        $envVar = sprintf('REMOTE_MODEL_%s_%s_DNS', $leftEntity->getPluralName(), $rightEntity->getPluralName());
+        $envVar = strtoupper(sprintf('REMOTE_MODEL_%s_%s_DNS', $leftEntity->getPluralName(), $rightEntity->getPluralName()));
 
         // Build the URL.
         $url = sprintf('%s-%s:%d', $leftEntity->getPluralName(), $rightEntity->getPluralName(), $this->getGrpcPort());
