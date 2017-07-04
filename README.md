@@ -17,8 +17,8 @@ https://github.com/LUSHDigital/microservice-core/blob/master/spec/swagger.yaml
 The package also handles relationships between remote models via the use of gRPC. As well as the microservices existing
 to power the remote models, it is also expected that a gRPC application will be available to manage the relationships.
 This gRPC application is based upon this [protocol buffer](https://github.com/LUSHDigital/lush-global-soa-architecture/blob/feature/SOA-66/protos/relationship/v1/relationship.proto).
-The gRPC is expected to be available at a DNS name in the following pattern `model_one_plural-model_two_plural:port`.
-An example would be https://shops-addresses:5001.
+
+See the [Configuration](https://github.com/LUSHDigital/microservice-remote-models/tree/master/docs/config.md) documentation for information on DNS and ports.
 
 ## Installation
 Install the package as normal:
@@ -52,3 +52,4 @@ $app->configure('database');
 * [CRUD](https://github.com/LUSHDigital/microservice-remote-models/tree/master/docs/crud.md)
 * [Relations](https://github.com/LUSHDigital/microservice-remote-models/tree/master/docs/relations.md)
 * [Conditions](https://github.com/LUSHDigital/microservice-remote-models/tree/master/docs/conditions.md)
+* [Configuration](https://github.com/LUSHDigital/microservice-remote-models/tree/master/docs/config.md)

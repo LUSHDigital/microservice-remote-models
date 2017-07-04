@@ -279,8 +279,16 @@ class Builder
      */
     public function getRelationshipClient(Model $leftEntity, Model $rightEntity)
     {
+        // Build the name of the environment variable to check.
+        $envVar = sprintf('REMOTE_MODEL_%s_%s_DNS', $leftEntity->getPluralName(), $rightEntity->getPluralName());
+
         // Build the URL.
         $url = sprintf('%s-%s:%d', $leftEntity->getPluralName(), $rightEntity->getPluralName(), $this->getGrpcPort());
+
+        // Override the URL if we have an environment variable available.
+        if (!empty(getenv($envVar))) {
+            $url = getenv($envVar);
+        }
 
         return new RelationshipServiceClient($url, [
             // TODO: TLS.
@@ -483,6 +491,6 @@ class Builder
      */
     protected function getGrpcPort()
     {
-        return !empty(getenv('SERVICE_MODEL_GRPC_PORT')) ? getenv('SERVICE_MODEL_GRPC_PORT') : 50051;
+        return !empty(getenv('REMOTE_MODEL_GRPC_PORT')) ? getenv('REMOTE_MODEL_GRPC_PORT') : 50051;
     }
 }
