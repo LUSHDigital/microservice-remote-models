@@ -6,10 +6,7 @@
 use LushDigital\MicroServiceRemoteModels\Model;
 
 /**
- * Test the core microservice functionality.
- *
- * Base functionality includes the info endpoint, health endpoint and response
- * formatter.
+ * Test the builder.
  */
 class MicroServiceRemoteModelsBuilderTest extends PHPUnit_Framework_TestCase
 {

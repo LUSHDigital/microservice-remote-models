@@ -6,10 +6,11 @@
 
 namespace LushDigital\MicroServiceRemoteModels;
 
-use LushDigital\MicroServiceRemoteModels\Events\RelationshipModified;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Promise;
 use LushDigital\MicroServiceModelUtils\Traits\MicroServiceCacheTrait;
+use LushDigital\MicroServiceRemoteModels\Events\RelationshipModified;
+use LushDigital\MicroServiceRemoteModels\Traits\TimeoutTrait;
 use Psr\Http\Message\ResponseInterface;
 use Relationship\RelationshipLeftEntity;
 use Relationship\RelationshipServiceClient;
@@ -22,6 +23,7 @@ use Relationship\RelationshipServiceClient;
 class Builder
 {
     use MicroServiceCacheTrait;
+    use TimeoutTrait;
 
     /**
      * The model being queried.
@@ -331,7 +333,7 @@ class Builder
             $relationshipClient = $this->getRelationshipClient($instance, $relationInstance);
 
             // Get all relation IDs.
-            $call = $relationshipClient->GetRelations($leftEntity);
+            $call = $relationshipClient->GetRelations($leftEntity, [], ['timeout' => $this->getTimeoutVal(10)]);
             $relationships = $call->responses();
 
             // Generate a promise for each relationship.
@@ -452,7 +454,8 @@ class Builder
             $relationInstance = new $relation;
 
             // Get all related IDs for this model.
-            $call = $this->getRelationshipClient($model, $relationInstance)->GetRelations($leftEntity);
+            $call = $this->getRelationshipClient($model, $relationInstance)
+                ->GetRelations($leftEntity, [], ['timeout' => $this->getTimeoutVal(10)]);
             $relationships = $call->responses();
 
             // Create the promises.

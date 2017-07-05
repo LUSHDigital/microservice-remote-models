@@ -6,9 +6,10 @@
 
 namespace LushDigital\MicroServiceRemoteModels\Listeners;
 
-use LushDigital\MicroServiceRemoteModels\Events\RelationshipModified;
 use LushDigital\MicroServiceRemoteModels\Builder;
+use LushDigital\MicroServiceRemoteModels\Events\RelationshipModified;
 use LushDigital\MicroServiceRemoteModels\Model;
+use LushDigital\MicroServiceRemoteModels\Traits\TimeoutTrait;
 use Relationship\Relationship;
 
 /**
@@ -18,6 +19,8 @@ use Relationship\Relationship;
  */
 class RelationshipModifiedListener
 {
+    use TimeoutTrait;
+
     /**
      * Handle the event.
      *
@@ -57,7 +60,7 @@ class RelationshipModifiedListener
         $relationship->setRightId($rightEntity->getPrimaryKeyValue());
 
         // Create the relationship.
-        $client->CreateRelationship($relationship)->wait();
+        $client->CreateRelationship($relationship, [], ['timeout' => $this->getTimeoutVal(10)])->wait();
     }
 
     /**
@@ -80,6 +83,6 @@ class RelationshipModifiedListener
         $relationship->setRightId($rightEntity->getPrimaryKeyValue());
 
         // Delete the relationship.
-        $client->DeleteRelationship($relationship)->wait();
+        $client->DeleteRelationship($relationship, [], ['timeout' => $this->getTimeoutVal(10)])->wait();
     }
 }
