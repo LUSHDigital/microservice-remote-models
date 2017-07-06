@@ -64,7 +64,7 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
      *
      * @var ClientInterface
      */
-    private $httpClient;
+    protected $httpClient;
 
     /**
      * The model's attributes.
