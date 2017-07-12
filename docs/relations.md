@@ -208,3 +208,32 @@ class ShopController extends Controller
     }
 }
 ```
+
+### Detach Relations
+If you do not want to actually delete the related entities, but just remove the relationship you can use the 'detach' functionality.
+To do this you can use the `detachRelations` method:
+
+```php
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Shop;
+use App\Address;
+use App\Http\Controllers\Controller;
+
+class ShopController extends Controller
+{
+    /**
+     * Detach addresses from the specified shop.
+     *
+     * @param int $id
+     */
+    public function detachAddresses($id)
+    {        
+        $shop = new Shop;
+        $shop->setPrimaryKeyValue($id);
+        $shop->detachRelations(Address::class);
+    }
+}
+```

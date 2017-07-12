@@ -299,6 +299,43 @@ class Builder
     }
 
     /**
+     * Detach the relationship between a model and it's relations.
+     *
+     * @return bool
+     */
+    public function detachRelations()
+    {
+        // Bail out if there are no relations.
+        if (empty($this->relations)) {
+            return false;
+        }
+
+        // Create the left entity, to get relationships from.
+        $leftEntity = new RelationshipLeftEntity();
+        $leftEntity->setLeftId($this->getModel()->getPrimaryKeyValue());
+
+        foreach ($this->relations as $relation) {
+            $relationInstance = new $relation;
+
+            // Get all related IDs for this model.
+            $call = $this->getRelationshipClient($this->getModel(), $relationInstance)
+                ->GetRelations($leftEntity, [], ['timeout' => $this->getTimeoutVal(10)]);
+            $relationships = $call->responses();
+
+            // Detach each relation instance that we find.
+            foreach ($relationships as $index => $relationship) {
+                $relatedId = $relationship->getRightId();
+                $relationInstance->setPrimaryKeyValue($relatedId);
+
+                event(new RelationshipModified($this->getModel(), $relationInstance, 'deleted'));
+            }
+        }
+
+        // Clear the cache.
+        $this->cacheForget($this->getModel());
+    }
+
+    /**
      * Get the models related to a given model instance.
      *
      * @param Model $instance

@@ -322,6 +322,21 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
     }
 
     /**
+     * Detach all relations of the given type from the model.
+     *
+     * @param mixed $relations
+     * @return bool
+     */
+    public function detachRelations($relations)
+    {
+        if (is_string($relations)) {
+            $relations = func_get_args();
+        }
+
+        return $this->newQueryBuilder($relations)->detachRelations();
+    }
+
+    /**
      * Get the attributes of this model that can be used as cache keys.
      *
      * @return array
