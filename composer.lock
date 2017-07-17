@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "dde035898f2daae9b3b3e5c792f4891cf7aaff80"
+                "reference": "4af64e1756e2bd765ff5e7c36dbcf5ea47e8e576"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/dde035898f2daae9b3b3e5c792f4891cf7aaff80",
-                "reference": "dde035898f2daae9b3b3e5c792f4891cf7aaff80",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/4af64e1756e2bd765ff5e7c36dbcf5ea47e8e576",
+                "reference": "4af64e1756e2bd765ff5e7c36dbcf5ea47e8e576",
                 "shasum": ""
             },
             "require": {
@@ -71,7 +71,7 @@
                 "singularize",
                 "string"
             ],
-            "time": "2017-06-16 11:07:05"
+            "time": "2017-07-06 08:23:43"
         },
         {
             "name": "grpc/grpc",
@@ -79,12 +79,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/grpc/grpc.git",
-                "reference": "d5ed0ea971deb6daf014edb82d8ed04147d4e1f4"
+                "reference": "5cb6a1f86129fc2833de9a27cfe174260934342b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/grpc/grpc/zipball/d5ed0ea971deb6daf014edb82d8ed04147d4e1f4",
-                "reference": "d5ed0ea971deb6daf014edb82d8ed04147d4e1f4",
+                "url": "https://api.github.com/repos/grpc/grpc/zipball/5cb6a1f86129fc2833de9a27cfe174260934342b",
+                "reference": "5cb6a1f86129fc2833de9a27cfe174260934342b",
                 "shasum": ""
             },
             "require": {
@@ -112,7 +112,7 @@
             "keywords": [
                 "rpc"
             ],
-            "time": "2017-07-04 00:07:03"
+            "time": "2017-07-11 21:11:30"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -236,12 +236,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "526d8ef63e8701e02216b621e4a3a16085e2286f"
+                "reference": "811b676fbab9c99e359885032e5ebc70e442f5b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/526d8ef63e8701e02216b621e4a3a16085e2286f",
-                "reference": "526d8ef63e8701e02216b621e4a3a16085e2286f",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/811b676fbab9c99e359885032e5ebc70e442f5b8",
+                "reference": "811b676fbab9c99e359885032e5ebc70e442f5b8",
                 "shasum": ""
             },
             "require": {
@@ -293,7 +293,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2017-06-19 13:30:27"
+            "time": "2017-07-17 09:11:21"
         },
         {
             "name": "illuminate/auth",
@@ -1438,16 +1438,16 @@
         },
         {
             "name": "lushdigital/microservice-model-utils",
-            "version": "v1.2.0",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LUSHDigital/microservice-model-utils.git",
-                "reference": "a0c531bf7c6659bdae59c6d4318651755bb9f9ba"
+                "reference": "52fd2a51f79659f4812ab0993ab916c936e050d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LUSHDigital/microservice-model-utils/zipball/a0c531bf7c6659bdae59c6d4318651755bb9f9ba",
-                "reference": "a0c531bf7c6659bdae59c6d4318651755bb9f9ba",
+                "url": "https://api.github.com/repos/LUSHDigital/microservice-model-utils/zipball/52fd2a51f79659f4812ab0993ab916c936e050d6",
+                "reference": "52fd2a51f79659f4812ab0993ab916c936e050d6",
                 "shasum": ""
             },
             "require": {
@@ -1480,7 +1480,7 @@
                 "laravel",
                 "lumen"
             ],
-            "time": "2017-04-28T13:17:25+00:00"
+            "time": "2017-07-17T10:51:47+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -3038,7 +3038,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2017-04-12T18:52:22+00:00"
+            "time": "2017-04-12 18:52:22"
         },
         {
             "name": "nette/bootstrap",
@@ -3275,12 +3275,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/neon.git",
-                "reference": "1a78ff64b1e161ebccc03bdf9366450a69365f5b"
+                "reference": "75d4d9120bac3a251e407608555825f4bd5b0872"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/neon/zipball/1a78ff64b1e161ebccc03bdf9366450a69365f5b",
-                "reference": "1a78ff64b1e161ebccc03bdf9366450a69365f5b",
+                "url": "https://api.github.com/repos/nette/neon/zipball/75d4d9120bac3a251e407608555825f4bd5b0872",
+                "reference": "75d4d9120bac3a251e407608555825f4bd5b0872",
                 "shasum": ""
             },
             "require": {
@@ -3319,9 +3319,16 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "Nette NEON: parser & generator for Nette Object Notation",
+            "description": "🍸 Nette NEON: encodes and decodes NEON file format.",
             "homepage": "http://ne-on.org",
-            "time": "2017-01-13 08:00:19"
+            "keywords": [
+                "export",
+                "import",
+                "neon",
+                "nette",
+                "yaml"
+            ],
+            "time": "2017-07-16T21:52:34+00:00"
         },
         {
             "name": "nette/php-generator",
@@ -3379,12 +3386,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/reflection.git",
-                "reference": "a9daa7238d61b34cb55dd74b281f165ef4d84628"
+                "reference": "66f6101c517ecfaa9d05bd420662248477318db0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/reflection/zipball/a9daa7238d61b34cb55dd74b281f165ef4d84628",
-                "reference": "a9daa7238d61b34cb55dd74b281f165ef4d84628",
+                "url": "https://api.github.com/repos/nette/reflection/zipball/66f6101c517ecfaa9d05bd420662248477318db0",
+                "reference": "66f6101c517ecfaa9d05bd420662248477318db0",
                 "shasum": ""
             },
             "require": {
@@ -3422,9 +3429,14 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "Nette PHP Reflection Component",
+            "description": "Nette Reflection: docblock annotations parser and common reflection classes",
             "homepage": "https://nette.org",
-            "time": "2017-02-04 14:38:41"
+            "keywords": [
+                "annotation",
+                "nette",
+                "reflection"
+            ],
+            "time": "2017-07-16T21:57:07+00:00"
         },
         {
             "name": "nette/utils",
@@ -3535,26 +3547,26 @@
                 "reflection",
                 "static analysis"
             ],
-            "time": "2017-04-30T11:58:12+00:00"
+            "time": "2017-04-30 11:58:12"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "3.1.1",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "8331b5efe816ae05461b7ca1e721c01b46bafb3e"
+                "reference": "46f7e8bb075036c92695b15a1ddb6971c751e585"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/8331b5efe816ae05461b7ca1e721c01b46bafb3e",
-                "reference": "8331b5efe816ae05461b7ca1e721c01b46bafb3e",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/46f7e8bb075036c92695b15a1ddb6971c751e585",
+                "reference": "46f7e8bb075036c92695b15a1ddb6971c751e585",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.5",
                 "phpdocumentor/reflection-common": "^1.0@dev",
-                "phpdocumentor/type-resolver": "^0.2.0",
+                "phpdocumentor/type-resolver": "^0.4.0",
                 "webmozart/assert": "^1.0"
             },
             "require-dev": {
@@ -3580,24 +3592,24 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2016-09-30T07:12:33+00:00"
+            "time": "2017-07-15T11:38:20+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "0.2.1",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "e224fb2ea2fba6d3ad6fdaef91cd09a172155ccb"
+                "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/e224fb2ea2fba6d3ad6fdaef91cd09a172155ccb",
-                "reference": "e224fb2ea2fba6d3ad6fdaef91cd09a172155ccb",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/9c977708995954784726e25d0cd1dddf4e65b0f7",
+                "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5",
+                "php": "^5.5 || ^7.0",
                 "phpdocumentor/reflection-common": "^1.0"
             },
             "require-dev": {
@@ -3627,7 +3639,7 @@
                     "email": "me@mikevanriel.com"
                 }
             ],
-            "time": "2016-11-25T06:54:22+00:00"
+            "time": "2017-07-14T14:27:02+00:00"
         },
         {
             "name": "phpspec/prophecy",
@@ -3690,7 +3702,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2017-05-31T16:22:32+00:00"
+            "time": "2017-05-31 16:22:32"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -4021,7 +4033,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-06-23T12:45:27+00:00"
+            "time": "2017-06-23 12:45:27"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -4080,7 +4092,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2017-06-30T09:13:00+00:00"
+            "time": "2017-06-30 09:13:00"
         },
         {
             "name": "popsul/php-token-reflection",
@@ -4253,28 +4265,28 @@
         },
         {
             "name": "sebastian/diff",
-            "version": "dev-master",
+            "version": "1.4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "2994073dc733d81c4f54d5291ac3d867402dddee"
+                "reference": "7f066a26a962dbe58ddea9f72a4e82874a3975a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/2994073dc733d81c4f54d5291ac3d867402dddee",
-                "reference": "2994073dc733d81c4f54d5291ac3d867402dddee",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/7f066a26a962dbe58ddea9f72a4e82874a3975a4",
+                "reference": "7f066a26a962dbe58ddea9f72a4e82874a3975a4",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0"
+                "php": "^5.3.3 || ^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.1"
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0-dev"
+                    "dev-master": "1.4-dev"
                 }
             },
             "autoload": {
@@ -4301,7 +4313,7 @@
             "keywords": [
                 "diff"
             ],
-            "time": "2017-06-25T08:47:13+00:00"
+            "time": "2017-05-22T07:24:03+00:00"
         },
         {
             "name": "sebastian/environment",
@@ -4756,7 +4768,7 @@
                 "configuration",
                 "options"
             ],
-            "time": "2017-05-17T16:21:40+00:00"
+            "time": "2017-05-17 16:21:40"
         },
         {
             "name": "symfony/yaml",
@@ -4811,7 +4823,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-03T10:20:17+00:00"
+            "time": "2017-07-03 10:20:17"
         },
         {
             "name": "tracy/tracy",
@@ -4819,12 +4831,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tracy.git",
-                "reference": "775049e4fd5946b131f346a38edd093ce62c0068"
+                "reference": "85157f5b29fd0147a433dc09d87abd9e21fa22f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/775049e4fd5946b131f346a38edd093ce62c0068",
-                "reference": "775049e4fd5946b131f346a38edd093ce62c0068",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/85157f5b29fd0147a433dc09d87abd9e21fa22f8",
+                "reference": "85157f5b29fd0147a433dc09d87abd9e21fa22f8",
                 "shasum": ""
             },
             "require": {
@@ -4878,7 +4890,7 @@
                 "nette",
                 "profiler"
             ],
-            "time": "2017-07-04T09:56:57+00:00"
+            "time": "2017-07-14T10:42:25+00:00"
         },
         {
             "name": "webmozart/assert",
