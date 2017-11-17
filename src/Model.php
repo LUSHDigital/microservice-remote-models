@@ -590,4 +590,16 @@ abstract class Model implements ArrayAccess, Arrayable, Cacheable, Jsonable, Jso
             ]);
         }
     }
+
+    /**
+     * Get a list of all remote models that own this one.
+     *
+     * @param string $ownerModel
+     *     Fully qualified class name for the owner model.
+     * @return Model[]
+     */
+    public function getOwners($ownerModel)
+    {
+        return $this->newQueryBuilder()->getOwners($ownerModel);
+    }
 }

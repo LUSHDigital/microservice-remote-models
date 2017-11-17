@@ -13,6 +13,7 @@ use LushDigital\MicroServiceRemoteModels\Events\RelationshipModified;
 use LushDigital\MicroServiceRemoteModels\Traits\TimeoutTrait;
 use Psr\Http\Message\ResponseInterface;
 use Relationship\RelationshipLeftEntity;
+use Relationship\RelationshipRightEntity;
 use Relationship\RelationshipServiceClient;
 
 /**
@@ -532,5 +533,36 @@ class Builder
     protected function getGrpcPort()
     {
         return !empty(getenv('REMOTE_MODEL_GRPC_PORT')) ? getenv('REMOTE_MODEL_GRPC_PORT') : 50051;
+    }
+
+    /**
+     * Get a list of all remote models that own the current model.
+     *
+     * @param string $ownerModel
+     *     Fully qualified class name for the owner model.
+     *
+     * @return Model[]
+     */
+    public function getOwners($ownerModel)
+    {
+        $rightEntity = new RelationshipRightEntity;
+        $rightEntity->setRightId($this->model->getPrimaryKeyValue());
+
+        // Get all related IDs for this model.
+        $call = $this->getRelationshipClient((new $ownerModel), $this->getModel())
+            ->GetLeftRelations($rightEntity, [], ['timeout' => $this->getTimeoutVal(10)]);
+        $owners = $call->responses();
+
+        $ownerInstances = [];
+
+        // Detach each relation instance that we find.
+        foreach ($owners as $index => $owner) {
+            $ownerInstance = new $ownerModel;
+            $ownerInstance->setPrimaryKeyValue($owner->getLeftId());
+
+            $ownerInstances[] = $ownerInstance;
+        }
+
+        return $ownerInstances;
     }
 }

@@ -50,6 +50,20 @@ namespace Relationship {
     }
 
     /**
+     * Get the dominant left hand entity from a right hand entity.
+     * @param \Relationship\RelationshipRightEntity $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function GetLeftRelations(\Relationship\RelationshipRightEntity $argument,
+      $metadata = [], $options = []) {
+      return $this->_serverStreamRequest('/relationship.RelationshipService/GetLeftRelations',
+      $argument,
+      ['\Relationship\Relationship', 'decode'],
+      $metadata, $options);
+    }
+
+    /**
      * Update an existing relationship.
      * @param \Relationship\UpdateRelationshipRequest $argument input argument
      * @param array $metadata metadata
